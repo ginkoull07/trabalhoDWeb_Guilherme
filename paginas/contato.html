@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LínguaPeak — Escola de Inglês</title>
+  <link rel="stylesheet" href="../css/layout.css" type="text/css">
+</head>
+
+<body>
+
+  <header>
+    <img src="../mídias/logo.png" alt="Logo da empresa">
+    <h1>LínguaPeak</h1>
+  </header>
+
+  <section class="menu">
+    <h3>Menu</h3>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Cursos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li>
+          <a href="#">Sobre</a>
+          <ul class="submenu">
+            <li><a href="sobre.html">Nossa empresa</a></li>
+            <li><a href="depoimentos.html">Depoimentos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <main class="formulario">
+    <section id="contato">
+      <h2>Contate-nos</h2>
+
+      <form action="#" method="post" id="frmContato">
+        <label for="ipNome">
+          <input type="text" name="ipNome" id="ipNome">
+          Nome*
+        </label>
+
+        <label for="ipEmail">
+          <input type="email" name="ipEmail" id="ipEmail">
+          E-mail*
+        </label>
+
+        <label for="ipTel">
+          <input type="tel" name="ipTel" id="ipTel">
+          Telefone
+        </label>
+
+        <label for="ipEndereco">
+          <input type="text" name="ipEndereco" id="ipEndereco">
+          Endereço
+        </label>
+
+        <label for="ipData">
+          <input type="date" name="ipData" id="ipData">
+          Data de nascimento
+        </label>
+
+        <label>
+          <select name="slOnde" id="slOnde">
+            <option value="amigos">Amigos</option>
+            <option value="familia">Familiares</option>
+            <option value="redes">Redes sociais</option>
+            <option value="panfleto">Panfletos</option>
+          </select>
+          Onde nos conheceu
+        </label>
+
+        <label>
+          <textarea name="taMensagem" id="taMensagem"></textarea>
+          Mensagem
+
+        </label>
+
+
+        <label for="novidades">
+          <input type="checkbox" id="novidades" name="novidades">
+          Deseja receber novidades?
+        </label>
+
+        <button type="reset" id="btnLimpar">Limpar</button>
+
+        <button onclick="mostrarDadosForm(event)">Enviar</button>
+
+      </form>
+    </section>
+
+    <h2 class="confirmacao">Confirmação dos dados:</h2>
+    <p id="pNome"></p>
+    <p id="pEmail"></p>
+    <p id="pTel"></p>
+    <p id="pDataNasc"></p>
+    <p id="pOnde"></p>
+    <p id="pMensagem"></p>
+
+    <button id="btnConfirmar" type="submit">
+      [Confirmar]
+    </button>
+
+  </main>
+
+  <footer>
+    <address>
+      <strong>LinguaPeak</strong>
+      <p>oi@linguapeak.com.br</p>
+      <p>(11) 9 9999-0000</p>
+    </address>
+
+    <small>&copy; 2026 LinguaPeak Escola de Inglês.</small>
+  </footer>
+
+  <script src="../script/script.js"></script>
+
+</body>
+
+</html>
