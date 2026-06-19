@@ -479,13 +479,13 @@
       }
   }
 
-  #depoimentos {
+  .depoimentos {
       display: flex;
       flex-direction: column;
       gap: 0;
   }
 
-  #depoimentos h2 {
+  .depoimentos h2 {
       margin-bottom: 24px;
   }
 
